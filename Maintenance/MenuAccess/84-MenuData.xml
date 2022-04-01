@@ -1,0 +1,16 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Micro Mandiri Activity System" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Collateral Administration" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Send to RCO" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/SendToRCO/ListAgunan.aspx?tc=M1.4&amp;mc=M0104" />
+            <MenuItem Label="Pick Up &amp; Send Collateral" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/PickUpSendCollateral/ListRequest.aspx?tc=M1.6&amp;mc=M0106" />
+            <MenuItem Label="Reporting" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/Reporting/CollateralAdministrationReport.aspx?tc=M1.7&amp;mc=M0107" />
+          </MenuGroup>
+        </MenuItem>
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

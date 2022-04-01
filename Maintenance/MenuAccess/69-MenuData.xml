@@ -1,0 +1,119 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Data Control Monitoring" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="CIF Data Correction" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCorrectionRequir/CifListData2.aspx?mc=DCM01" />
+        <MenuItem Label="Dana Account Correction" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCorrectionRequir/DanaListData.aspx?mc=DCM02" />
+        <MenuItem Label="Loan Data BU Correction" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCorrectionRequir/LoanListDataBU2.aspx?mc=DCM03" />
+        <MenuItem Label="Loan Data CO Correction" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCorrectionRequir/LoanListDataCO2.aspx?mc=DCM04" />
+        <MenuItem Label="Collateral Data Correction" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCorrectionRequir/CollateralCorrectionList.aspx?mc=DCM05" />
+        <MenuItem Label="Trade Data Completeness" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCompleteness/Trade/TradeDataCompleteList.aspx?mc=DCM06" />
+        <MenuItem Label="Treasury Data Completeness" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCompleteness/Treasury/TreasuryDataCompleteList.aspx?mc=DCM07" />
+        <MenuItem Label="CAP Data Completeness" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCompleteness/CAP/CAPCompletenessList.aspx" />
+        <MenuItem Label="Facilities" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Assignment Maintain Data" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" />
+            <MenuItem Label="Inquiry Pending Maintenance" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" />
+            <MenuItem Label="Inquiry Data Owner" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="Data Error Checking Model" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Link Data ID Parameter" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Maker" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Maker/LinkDataIDParam.aspx?mc=DCM140101" />
+                <MenuItem Label="Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Approval/LinkDataIDAppr.aspx?mc=DCM140102" />
+              </MenuGroup>
+            </MenuItem>
+            <MenuItem Label="CIF Rule Parameter" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Maker" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Maker/CIFRule.aspx?mc=DCM140201" />
+                <MenuItem Label="Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Approval/CIFRuleAppr.aspx?mc=DCM140202" />
+              </MenuGroup>
+            </MenuItem>
+            <MenuItem Label="Dana Rule Parameter" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Maker" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Maker/DanaRule.aspx?mc=DCM140301" />
+                <MenuItem Label="Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Approval/DanaRuleAppr.aspx?mc=DCM140302" />
+              </MenuGroup>
+            </MenuItem>
+            <MenuItem Label="Credit Rule Parameter" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Maker" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Maker/CreditRule.aspx?mc=DCM140401" />
+                <MenuItem Label="Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Approval/CreditRuleAppr.aspx?mc=DCM140402" />
+              </MenuGroup>
+            </MenuItem>
+            <MenuItem Label="Agunan Rule Parameter" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Maker" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Maker/AgunanRule.aspx?mc=DCM140501" />
+                <MenuItem Label="Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Approval/AgunanRuleAppr.aspx?mc=DCM140502" />
+              </MenuGroup>
+            </MenuItem>
+            <MenuItem Label="Trade Rule Parameter" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Maker" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Maker/TradeRule.aspx?mc=DCM140601" />
+                <MenuItem Label="Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Approval/TradeRuleAppr.aspx?mc=DCM140602" />
+              </MenuGroup>
+            </MenuItem>
+            <MenuItem Label="Treasury Rule Parameter" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Maker" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Maker/TreasuryRule.aspx?mc=DCM140701" />
+                <MenuItem Label="Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/DataErrorCheckModel/Approval/TreasuryRuleAppr.aspx?mc=DCM140702" />
+              </MenuGroup>
+            </MenuItem>
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="Validate Process" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="CIF" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/ValidateProcess/CIF.aspx?mc=DCM1501" />
+            <MenuItem Label="Dana" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/ValidateProcess/Dana.aspx?mc=DCM1502" />
+            <MenuItem Label="Credit" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/ValidateProcess/Credit.aspx?mc=DCM1503" />
+            <MenuItem Label="Agunan" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/ValidateProcess/Agunan.aspx?mc=DCM1504" />
+            <MenuItem Label="Trade" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/ValidateProcess/Trade.aspx?mc=DCM1505" />
+            <MenuItem Label="Treasury" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/EnhancementErrorChecking/ValidateProcess/Treasury.aspx?mc=DCM1506" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="DCM - CONTROL &amp; MONITORING" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Application Error Checking" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCompleteness/ControlAndMonitoring.aspx?mc=DCM13" />
+            <MenuItem Label="CABANG" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="SourceSMEReport/DQA/MainReportDQA.aspx?mc=DQA01" />
+            <MenuItem Label="BUSINESS UNIT" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="SourceSMEReport/DQA/MainReportDQA.aspx?mc=DQA02" />
+            <MenuItem Label="CREDIT OPERATION" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="SourceSMEReport/DQA/MainReportDQA.aspx?mc=DQA03" />
+            <MenuItem Label="Upload Data Normalisasi CIF" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="SourceSMEReport/DQA/NormalisasiCIFUploadData.aspx?mc=DQA05" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="SPO Pengelolaan Kualitas Data" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="SourceSMEReport/DQA/SPODCM.doc" />
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Data Dictionary" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Data Initiation" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Initiation" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/DataInitiation/Initiation/GeneralInformationIn.aspx?mc=DD0101" />
+            <MenuItem Label="Reject Initiation" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/DataInitiation/RejectInitiation/DataRejectInitList.aspx?mc=DD0102" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="Approval Data Initiation" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/ApprovalDataInitiation/ApprDataRequestList.aspx?mc=DD02" />
+        <MenuItem Label="Data Request Assignment &amp; Validation" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/DataRequestAssignValid/DataAssignValidList.aspx?mc=DD03" />
+        <MenuItem Label="Data Requested Analysis" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/DataRequestAnalysis/DataRequestList.aspx?mc=DD04" />
+        <MenuItem Label="Approval Request Data" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/ApprovalRequestData/RequestApprList.aspx?mc=DD05" />
+        <MenuItem Label="Data Request Result" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/DataRequestResult/DataResultList.aspx?mc=DD06" />
+        <MenuItem Label="Facilities" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Inquiry Data Dictionary" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/Facilities/InquiryDataDictionary/DataType.aspx?mc=DD0701" />
+            <MenuItem Label="Assignment Analysis Data/Requested/Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/Facilities/AssignmentAnalysisDataRequested/AssignmentList.aspx?mc=DD0702" />
+            <MenuItem Label="Inquiry Request Data" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/Facilities/InquiryRequestData/InquiryRequestData.aspx?mc=DD0703" />
+            <MenuItem Label="Inquiry Pending Task List" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/Facilities/InquiryPendingTaskList/InquiryPendingTaskList.aspx?mc=DD0704" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="DD Parameter" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Maker" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/DDParameter/Maker/GeneralDDParamAll.aspx?mc=DD0801&amp;sm=27" />
+            <MenuItem Label="Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataDictionary/DDParameter/Approval/GeneralParamDDApproval.aspx?mc=DD0801&amp;sm=27" />
+          </MenuGroup>
+        </MenuItem>
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

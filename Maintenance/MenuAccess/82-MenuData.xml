@@ -1,0 +1,29 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Facilities" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Messages" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Send/Receive Messages" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Facilities/Messages.aspx?mc=14110" />
+          </MenuGroup>
+        </MenuItem>
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Micro Mandiri Activity System" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Collateral Administration" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Upload Data" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/UploadData/UploadData.aspx?tc=M1.1&amp;mc=M0101" />
+            <MenuItem Label="Input New Collateral" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/InputNewCollateral/ListCollateral.aspx?tc=M1.2&amp;mc=M0102" />
+            <MenuItem Label="Collateral Request" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/CollateralRequest/ListCollateral.aspx?tc=M1.5&amp;mc=M0105" />
+            <MenuItem Label="Reporting" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/Reporting/CollateralAdministrationReport.aspx?tc=M1.7&amp;mc=M0107" />
+            <MenuItem Label="Batching Send to CAO" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/DetailCollateral/ListJaminan.aspx?tc=M1.2&amp;mc=M0110" />
+            <MenuItem Label="Profile Resiko" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/DetailCollateral/Collateral_Inv.aspx?link=profile&amp;mc=M0501" />
+            <MenuItem Label="Penarikan/Pembayaran" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/DetailCollateral/Collateral_Inv.aspx?link=bunga&amp;mc=M0502" />
+          </MenuGroup>
+        </MenuItem>
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

@@ -1,0 +1,11 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Credit Admin" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Appraisal Assignment &amp; Validation" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CreditOperations/ListAssignment.aspx?tc=&amp;mc=BP201" />
+        <MenuItem Label="Appraisal Entry" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Appraisal/ListAppraisal.aspx?tc=&amp;mc=BP202" />
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

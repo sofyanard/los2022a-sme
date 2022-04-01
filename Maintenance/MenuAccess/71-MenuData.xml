@@ -1,0 +1,26 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="DCM" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="CIF Data Correction" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCorrectionRequir/CifListData2.aspx?mc=DCM01" />
+        <MenuItem Label="Dana Account Correction" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCorrectionRequir/DanaListData.aspx?mc=DCM02" />
+        <MenuItem Label="Loan Data BU Correction" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCorrectionRequir/LoanListDataBU2.aspx?mc=DCM03" />
+        <MenuItem Label="Loan Data CO Correction" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCorrectionRequir/LoanListDataCO2.aspx?mc=DCM04" />
+        <MenuItem Label="Collateral Data Correction" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="DCM/DataCorrectionRequir/CollateralCorrectionList.aspx?mc=DCM05" />
+        <MenuItem Label="Trade Data Completeness" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" />
+        <MenuItem Label="Treasury Data Completeness" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" />
+        <MenuItem Label="CAP Data Completeness" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" />
+        <MenuItem Label="Facilities" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Assignment Maintain Data" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" />
+            <MenuItem Label="Inquiry Pending Maintenance" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" />
+            <MenuItem Label="Inquiry Data Owner" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="Application Error Checking" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" />
+        <MenuItem Label="SPO Pengelolaan Kualitas Data" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="SourceSMEReport/DQA/SPODCM.doc" />
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B626C0FA-2AB5-4697-9875-744CC74B7F78}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>HistoricalLoanInfo</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HistoricalLoanInfo</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ASPnetMenu">
+      <Name>ASPnetMenu</Name>
+      <HintPath>bin\ASPnetMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="DMS.BlackList">
+      <Name>DMS.BlackList</Name>
+      <HintPath>bin\DMS.BlackList.dll</HintPath>
+    </Reference>
+    <Reference Include="DMS.CuBESCore">
+      <Name>DMS.CuBESCore</Name>
+      <HintPath>bin\DMS.CuBESCore.dll</HintPath>
+    </Reference>
+    <Reference Include="DMS.DBConnection">
+      <Name>DMS.DBConnection</Name>
+      <HintPath>bin\DMS.DBConnection.dll</HintPath>
+    </Reference>
+    <Reference Include="Earmarking">
+      <Name>Earmarking</Name>
+      <HintPath>bin\Earmarking.dll</HintPath>
+    </Reference>
+    <Reference Include="ExceptionHandling">
+      <Name>ExceptionHandling</Name>
+      <HintPath>bin\ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <Name>Interop.Excel</Name>
+      <HintPath>bin\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core">
+      <Name>Interop.Microsoft.Office.Core</Name>
+      <HintPath>bin\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE">
+      <Name>Interop.VBIDE</Name>
+      <HintPath>bin\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Word">
+      <Name>Interop.Word</Name>
+      <HintPath>bin\Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="ReportViewer">
+      <Name>ReportViewer</Name>
+      <HintPath>bin\ReportViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BankRelation.aspx.cs">
+      <DependentUpon>BankRelation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BankRelation.aspx.designer.cs">
+      <DependentUpon>BankRelation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_AR.aspx.cs">
+      <DependentUpon>COLLATERAL_AR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_AR.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_AR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_BOND.aspx.cs">
+      <DependentUpon>COLLATERAL_BOND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_BOND.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_BOND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_DEP.aspx.cs">
+      <DependentUpon>COLLATERAL_DEP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_DEP.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_DEP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_INV.aspx.cs">
+      <DependentUpon>COLLATERAL_INV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_INV.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_INV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_LC.aspx.cs">
+      <DependentUpon>COLLATERAL_LC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_LC.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_LC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_LSAGR.aspx.cs">
+      <DependentUpon>COLLATERAL_LSAGR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_LSAGR.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_LSAGR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_MISC.aspx.cs">
+      <DependentUpon>COLLATERAL_MISC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_MISC.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_MISC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_PG.aspx.cs">
+      <DependentUpon>COLLATERAL_PG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_PG.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_PG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_PNCHQ.aspx.cs">
+      <DependentUpon>COLLATERAL_PNCHQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_PNCHQ.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_PNCHQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_RE.aspx.cs">
+      <DependentUpon>COLLATERAL_RE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_RE.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_RE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_SPK.aspx.cs">
+      <DependentUpon>COLLATERAL_SPK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_SPK.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_SPK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_STOCK.aspx.cs">
+      <DependentUpon>COLLATERAL_STOCK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_STOCK.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_STOCK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_TRCON.aspx.cs">
+      <DependentUpon>COLLATERAL_TRCON.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_TRCON.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_TRCON.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_VEH.aspx.cs">
+      <DependentUpon>COLLATERAL_VEH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\COLLATERAL_VEH.aspx.designer.cs">
+      <DependentUpon>COLLATERAL_VEH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\jaminan_detail.aspx.cs">
+      <DependentUpon>jaminan_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\jaminan_detail.aspx.designer.cs">
+      <DependentUpon>jaminan_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Collateral\Jaminan_List.aspx.cs">
+      <DependentUpon>Jaminan_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collateral\Jaminan_List.aspx.designer.cs">
+      <DependentUpon>Jaminan_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralInfo.aspx.cs">
+      <DependentUpon>GeneralInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeneralInfo.aspx.designer.cs">
+      <DependentUpon>GeneralInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HistoricalLoanList.aspx.cs">
+      <DependentUpon>HistoricalLoanList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HistoricalLoanList.aspx.designer.cs">
+      <DependentUpon>HistoricalLoanList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HistoricalLoanMain.aspx.cs">
+      <DependentUpon>HistoricalLoanMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HistoricalLoanMain.aspx.designer.cs">
+      <DependentUpon>HistoricalLoanMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPerusahaan.aspx.cs">
+      <DependentUpon>InfoPerusahaan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InfoPerusahaan.aspx.designer.cs">
+      <DependentUpon>InfoPerusahaan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCustomer.aspx.cs">
+      <DependentUpon>SearchCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchCustomer.aspx.designer.cs">
+      <DependentUpon>SearchCustomer.aspx</DependentUpon>
+    </Compile>
+    <Content Include="BankRelation.aspx" />
+    <Content Include="Collateral\COLLATERAL_AR.aspx" />
+    <Content Include="Collateral\COLLATERAL_BOND.aspx" />
+    <Content Include="Collateral\COLLATERAL_DEP.aspx" />
+    <Content Include="Collateral\COLLATERAL_INV.aspx" />
+    <Content Include="Collateral\COLLATERAL_LC.aspx" />
+    <Content Include="Collateral\COLLATERAL_LSAGR.aspx" />
+    <Content Include="Collateral\COLLATERAL_MISC.aspx" />
+    <Content Include="Collateral\COLLATERAL_PG.aspx" />
+    <Content Include="Collateral\COLLATERAL_PNCHQ.aspx" />
+    <Content Include="Collateral\COLLATERAL_RE.aspx" />
+    <Content Include="Collateral\COLLATERAL_SPK.aspx" />
+    <Content Include="Collateral\COLLATERAL_STOCK.aspx" />
+    <Content Include="Collateral\COLLATERAL_TRCON.aspx" />
+    <Content Include="Collateral\COLLATERAL_VEH.aspx" />
+    <Content Include="Collateral\jaminan_detail.aspx" />
+    <Content Include="Collateral\Jaminan_List.aspx" />
+    <Content Include="GeneralInfo.aspx" />
+    <Content Include="HistoricalLoanList.aspx" />
+    <Content Include="HistoricalLoanMain.aspx" />
+    <Content Include="InfoPerusahaan.aspx" />
+    <Content Include="SearchCustomer.aspx" />
+    <EmbeddedResource Include="BankRelation.aspx.resx">
+      <DependentUpon>BankRelation.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_AR.aspx.resx">
+      <DependentUpon>COLLATERAL_AR.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_BOND.aspx.resx">
+      <DependentUpon>COLLATERAL_BOND.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_DEP.aspx.resx">
+      <DependentUpon>COLLATERAL_DEP.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_INV.aspx.resx">
+      <DependentUpon>COLLATERAL_INV.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_LC.aspx.resx">
+      <DependentUpon>COLLATERAL_LC.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_LSAGR.aspx.resx">
+      <DependentUpon>COLLATERAL_LSAGR.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_MISC.aspx.resx">
+      <DependentUpon>COLLATERAL_MISC.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_PG.aspx.resx">
+      <DependentUpon>COLLATERAL_PG.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_PNCHQ.aspx.resx">
+      <DependentUpon>COLLATERAL_PNCHQ.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_RE.aspx.resx">
+      <DependentUpon>COLLATERAL_RE.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_SPK.aspx.resx">
+      <DependentUpon>COLLATERAL_SPK.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_STOCK.aspx.resx">
+      <DependentUpon>COLLATERAL_STOCK.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_TRCON.aspx.resx">
+      <DependentUpon>COLLATERAL_TRCON.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\COLLATERAL_VEH.aspx.resx">
+      <DependentUpon>COLLATERAL_VEH.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\jaminan_detail.aspx.resx">
+      <DependentUpon>jaminan_detail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collateral\Jaminan_List.aspx.resx">
+      <DependentUpon>Jaminan_List.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralInfo.aspx.resx">
+      <DependentUpon>GeneralInfo.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoricalLoanList.aspx.resx">
+      <DependentUpon>HistoricalLoanList.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoricalLoanMain.aspx.resx">
+      <DependentUpon>HistoricalLoanMain.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoPerusahaan.aspx.resx">
+      <DependentUpon>InfoPerusahaan.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchCustomer.aspx.resx">
+      <DependentUpon>SearchCustomer.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2244</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SME/HistoricalLoanInfo</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,17 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Integrated Policy &amp; Procedure System" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Process" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Initiation Validation" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="IPPS/Process/InitiationValidation/InitiationList.aspx?tc=PP2.0&amp;mc=IPPS0102" />
+            <MenuItem Label="Review Assignment &amp; Validation" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="IPPS/Process/ReviewAssignmentValidation/ReviewRequestList.aspx?tc=PP3.0&amp;mc=IPPS0103" />
+            <MenuItem Label="Review Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="IPPS/Process/ReviewApproval/ReviewApprovalList.aspx?tc=PP3.0&amp;mc=IPPS01045" />
+            <MenuItem Label="Validation &amp; Submit for IC" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="IPPS/Process/ValidationSubmitIC/ValidationList.aspx?tc=PP8.0&amp;mc=IPPS0107" />
+          </MenuGroup>
+        </MenuItem>
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

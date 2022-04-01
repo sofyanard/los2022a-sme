@@ -1,0 +1,40 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Facilities" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Inquiry Application by Status" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Facilities/InquiryStatus.aspx?mc=024" />
+        <MenuItem Label="Change Password" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Facilities/ChangePassword.aspx?mc=026" />
+        <MenuItem Label="Assignment" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Assignment: RM/CA/CO" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Facilities/FindCustomer.aspx?mc=060" />
+            <MenuItem Label="Assignment: Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Facilities/AprvFindCustomer.aspx?mc=061" />
+          </MenuGroup>
+        </MenuItem>
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="ITTP" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Initiation" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Initiation" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/SearchCustomer.aspx?tc=T1.0&amp;mc=T01" />
+            <MenuItem Label="Pending Application" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/PendingApplication.aspx?tc=T1.5&amp;mc=T0105" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="Review &amp; Approve" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/ListReview.aspx?tc=T2.1&amp;mc=T02" />
+        <MenuItem Label="Compliance Assigment" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Assignment" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/AssigmentList.aspx?tc=T3.0&amp;mc=T03" />
+            <MenuItem Label="Compliance Condition" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/ComplianceList.aspx?tc=T4.0&amp;mc=T04" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="Upload to eMas" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/UploadList.aspx?tc=T5.2&amp;mc=T0502" />
+        <MenuItem Label="Reject eMas Maintenance" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/RejecteMas.aspx?tc=T5.4&amp;mc=T0504" />
+        <MenuItem Label="Worksheet" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/WorksheetList.aspx?tc=T6.0&amp;mc=T06" />
+        <MenuItem Label="Worksheet CRP" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/WorksheetListCRP.aspx?tc=T6.1&amp;mc=T0601" />
+        <MenuItem Label="Reject Letter" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/ListReject.aspx?tc=T8.0&amp;mc=T08" />
+        <MenuItem Label="Reject Application" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/RejectApplication.aspx?ap_regno=&amp;nama=&amp;cust=&amp;tgl=&amp;bln=&amp;thn=&amp;noID=&amp;area=&amp;cabang=&amp;tampil=&amp;ap_link=&amp;mc=T09" />
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

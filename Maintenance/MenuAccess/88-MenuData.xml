@@ -1,0 +1,12 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Legal Advise Administration" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Review &amp; Analysis" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Legal/LegalAdviseAdministration/ReviewAnalysis/RequestList.aspx?tc=LGL.3&amp;mc=LGL03" />
+        <MenuItem Label="Inquiry Historical Data" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Legal/LegalAdviseAdministration/InquiryHistoricalData/ResultList.aspx?tc=LGL.5&amp;mc=LGL05" />
+        <MenuItem Label="Reporting" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Legal/LegalAdviseAdministration/Reporting/LegalAdminReporting.aspx?tc=LGL.6&amp;mc=LGL06" />
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

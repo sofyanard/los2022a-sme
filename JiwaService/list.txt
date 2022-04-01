@@ -1,0 +1,12 @@
+Dashboard.aspx
+DetailScoring.aspx
+InternalCustomerInput.aspx
+InternalReport.aspx
+JiwaServiceScoreBoard.aspx
+ParameterReport.aspx
+PendingReport.aspx
+ScoreReport.aspx
+ScoreResult.aspx
+SelfAssessmentInput.aspx
+SelfReport.aspx
+ValidationInput.aspx

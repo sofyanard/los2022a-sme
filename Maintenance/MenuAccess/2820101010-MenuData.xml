@@ -1,0 +1,25 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Integrated Policy &amp; Procedure System" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Process" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Initiation" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Initiation" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="IPPS/Process/ListInitiation.aspx?tc=PP1.0&amp;mc=IPPS01011" />
+                <MenuItem Label="Initiation Update" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="IPPS/Process/ListInitiation.aspx?tc=PP1.1&amp;mc=IPPS01012" />
+              </MenuGroup>
+            </MenuItem>
+            <MenuItem Label="Review Entry" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="IPPS/Process/ReviewEntry/ReviewRequestList.aspx?tc=PP3.0&amp;mc=IPPS0104" />
+            <MenuItem Label="Review Compiling" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="IPPS/Process/ReviewCompiling/ReviewReceivedList.aspx?tc=PP6.0&amp;mc=IPPS0105" />
+            <MenuItem Label="Final Darft Entry" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="IPPS/Process/FinalDraftEntry/WGList.aspx?tc=PP7.0&amp;mc=IPPS0106" />
+            <MenuItem Label="Committee Approval Entry" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="IPPS/Process/CommitteeApprovalEntry/ApprovalEntryList.aspx?tc=PP12.0&amp;mc=IPPS0110" />
+            <MenuItem Label="Upload for KMS" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="IPPS/Process/UploadforKMS/UploadKMSList.aspx?tc=PP13.0&amp;mc=IPPS0111" />
+            <MenuItem Label="Evaluation Worksheet" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="IPPS/Process/UploadforKMS/UploadKMSList.aspx?tc=PP15.0&amp;mc=IPPS0113" />
+          </MenuGroup>
+        </MenuItem>
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

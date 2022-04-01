@@ -1,0 +1,52 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Akreditasi Rekanan Kredit" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Processing" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Initiation" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/DataEntry/FindCustomer.aspx?tc=A1.1&amp;mc=A0101" />
+            <MenuItem Label="Verification" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/Verifikasi.aspx?tc=A1.2&amp;mc=A0102" />
+            <MenuItem Label="Analysis" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/Analisa.aspx?tc=A1.3&amp;mc=A0103" />
+            <MenuItem Label="Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/ListKeputusan.aspx?tc=A1.4&amp;mc=A0104" />
+            <MenuItem Label="Worksheet" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/ListWorksheet.aspx?tc=A1.5&amp;mc=A0105" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="Facilities" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Inquiry Data Rekanan" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/InquiryRekanan.aspx?tc=A2.1&amp;mc=A0201" />
+            <MenuItem Label="Inquiry Status Process" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/InquiryByStatus.aspx?tc=A2.2&amp;mc=A0202" />
+            <MenuItem Label="Sanksi" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Maker" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/Sanksi.aspx?tc=A2.4.1&amp;mc=A020401" />
+                <MenuItem Label="Approval" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/SanksiApproval.aspx?tc=A2.4.2&amp;mc=A020402" />
+              </MenuGroup>
+            </MenuItem>
+            <MenuItem Label="Catatan Unit Kerja" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/CatatanUnitKerja.aspx?tc=A2.5&amp;mc=A0205" />
+            <MenuItem Label="Daftar Pensiun" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/DaftarPensiun.aspx?tc=A2.6&amp;mc=A0206" />
+            <MenuItem Label="Daftar Rekanan Ditolak" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/RekananDitolak.aspx?tc=A2.7&amp;mc=A0207" />
+            <MenuItem Label="Inquiry Pekerjaan Rekanan" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/InquiryPengalaman.aspx?tc=A2.8&amp;mc=A0208" />
+            <MenuItem Label="Daftar Orang Tercela" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/RekananTercela.aspx?tc=A2.9&amp;mc=A0209" />
+            <MenuItem Label="Jatuh Tempo Rekanan" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/InputJatuhTempo.aspx?tc=A2.10&amp;mc=A0210" />
+            <MenuItem Label="Rekanan Information" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/CBI/ListRekananInput.aspx?tc=A2.11&amp;mc=A0211" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="Reporting" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="CEA/ReportingListing.aspx?tc=A3.0&amp;mc=A03" />
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Helpdesk Remedial System" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="End User Entry" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="End User Entry" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/EndUserEntry.aspx?tc=B1&amp;mc=B0101" />
+            <MenuItem Label="Pending Application" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/ListEndUserEntryAcq.aspx?tc=B1.1&amp;mc=B0102" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="End User Result" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/ResponList.aspx?tc=B3&amp;mc=B03" />
+        <MenuItem Label="PIC Assignment" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/PendingList.aspx?tc=B4&amp;mc=B04" />
+        <MenuItem Label="Inquiry Q &amp; A" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/QA.aspx?tc=B5&amp;mc=B05" />
+        <MenuItem Label="Inquiry By Status" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/InquiryByStatus.aspx?tc=B6&amp;mc=B06" />
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

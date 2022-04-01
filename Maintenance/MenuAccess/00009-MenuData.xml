@@ -1,0 +1,21 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="ITTP" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Initiation" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Initiation" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" />
+            <MenuItem Label="Pending Initiation" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/PendingApplication.aspx?tc=IT1.2&amp;mc=IT0102" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="Review &amp; Approve" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/ListReview.aspx?tc=IT2.0&amp;mc=IT02" />
+        <MenuItem Label="Compliance Assigment" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/AssigmentList.aspx?tc=IT3.0&amp;mc=IT03" />
+        <MenuItem Label="Comliance Condition" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/ComplianceList.aspx?tc=IT4.0&amp;mc=IT04" />
+        <MenuItem Label="Export Bilyet" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/ExportBilyetList.aspx?tc=IT5.0&amp;mc=IT05" />
+        <MenuItem Label="Generate Bilyet" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/GenerateBilyetList.aspx?tc=IT6.0&amp;mc=IT06" />
+        <MenuItem Label="Pencairan" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="ITTP/PencairanList.aspx?tc=IT7.0&amp;mc=IT07" />
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

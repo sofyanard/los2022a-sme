@@ -1,0 +1,16 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Helpdesk Remedial System" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="End User Entry" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/EndUserEntry.aspx?tc=B1&amp;mc=B01" />
+        <MenuItem Label="PIC Respon Entry" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/ProblemList.aspx?tc=B2&amp;mc=B02" />
+        <MenuItem Label="End User Result" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/ResponList.aspx?tc=B3&amp;mc=B03" />
+        <MenuItem Label="PIC Assignment" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/PicAssignment.aspx?tc=B4&amp;mc=B04" />
+        <MenuItem Label="Inquiry Q &amp; A" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/QA.aspx?tc=B5&amp;mc=B05" />
+        <MenuItem Label="Inquiry By Status" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/InquiryByStatus.aspx?tc=B6&amp;mc=B06" />
+        <MenuItem Label="Helpdesk Reporting" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="HDRS/HelpDeskDashboard.aspx?tc=B7&amp;mc=B07" />
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

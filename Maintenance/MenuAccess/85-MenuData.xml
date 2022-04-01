@@ -1,0 +1,38 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Data Control Monitoring" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="DCM - CONTROL &amp; MONITORING" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="CABANG" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="SourceSMEReport/DQA/MainReportDQA.aspx?mc=DQA01" />
+            <MenuItem Label="BUSINESS UNIT" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="SourceSMEReport/DQA/MainReportDQA.aspx?mc=DQA02" />
+            <MenuItem Label="CREDIT OPERATION" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="SourceSMEReport/DQA/MainReportDQA.aspx?mc=DQA03" />
+            <MenuItem Label="Upload Data Normalisasi CIF" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="SourceSMEReport/DQA/NormalisasiCIFUploadData.aspx?mc=DQA05" />
+          </MenuGroup>
+        </MenuItem>
+        <MenuItem Label="SPO Pengelolaan Kualitas Data" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="SourceSMEReport/DQA/SPODCM.doc" />
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Portfolio Information Center" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Inquiry Data per Sektor" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="PIC/InquiryPerSektor.aspx?mc=PIC03" />
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Micro Mandiri Activity System" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Supervision Management" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Micro Credit Quality" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Unit Parameter" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/SupervisionManagement/MicroCreditQuality/UnitParameter/ParameterUnit.aspx?tc=M2.3.1&amp;mc=M020301" />
+                <MenuItem Label="Monthly Review" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/SupervisionManagement/MicroCreditQuality/MonthlyReview/MonthlyReview.aspx?tc=M2.3.2&amp;mc=M020302" />
+                <MenuItem Label="Unit Review" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/SupervisionManagement/MicroCreditQuality/UnitReview/ReviewList.aspx?tc=M2.3.3&amp;mc=M020303" />
+              </MenuGroup>
+            </MenuItem>
+          </MenuGroup>
+        </MenuItem>
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

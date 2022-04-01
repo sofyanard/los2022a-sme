@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:6667/ExportWord/?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="ExportWord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExportWordResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentExportASCXCreateWord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="templateid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentExportASCXCreateWordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentExportASCXCreateWordResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentExportASCXCreateWordPk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="templateid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="seq" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentExportASCXCreateWordPkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentExportASCXCreateWordPkResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentExportASCXCreateExcel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="templateid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentExportASCXCreateExcelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentExportASCXCreateExcelResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentExportASCXCreateExcel2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="templateid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentExportASCXCreateExcel2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentExportASCXCreateExcel2Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentUploadASCXReadExcel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="filename" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="templateid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentUploadASCXReadExcelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentUploadASCXReadExcelResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentUploadASCXReadExcelPensiun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="filename" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="templateid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentUploadASCXReadExcelPensiunResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentUploadASCXReadExcelPensiunResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Neraca_KMK_KI_SMALLASPXviewExcel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dir" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Neraca_KMK_KI_SMALLASPXviewExcelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Neraca_KMK_KI_SMALLASPXviewExcelResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="results" nillable="true" type="q1:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Neraca_KMK_KI_SMALLASPXviewExcel_LabaRugi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dir" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Neraca_KMK_KI_SMALLASPXviewExcel_LabaRugiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Neraca_KMK_KI_SMALLASPXviewExcel_LabaRugiResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="results" nillable="true" type="q2:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Neraca_KMK_KI_MediumASPXViewExcel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dir" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Neraca_KMK_KI_MediumASPXViewExcelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Neraca_KMK_KI_MediumASPXViewExcelResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="results" nillable="true" type="q3:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Neraca_KMK_KI_MediumASPXviewExcel_LabaRugi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="directori" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Neraca_KMK_KI_MediumASPXviewExcel_LabaRugiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Neraca_KMK_KI_MediumASPXviewExcel_LabaRugiResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="results" nillable="true" type="q4:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AppraisalNewASPXReadExcel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="filename" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="templateid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="curef" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="clseq" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AppraisalNewASPXReadExcelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AppraisalNewASPXReadExcelResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainExport_Word">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="var_idExport1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="var_idExport2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainExport_WordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreditProposalMainExport_WordResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateNotaWord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sessionfullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="branchName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ddl_manualSelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMAT_TYPESelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_KETENTUANSelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateNotaWordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreditProposalMainp_CreateNotaWordResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateNotaExcel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SessionBranchName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SessionFullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMAT_TYPESelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_KETENTUANSelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ddl_manualSelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateNotaExcelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreditProposalMainp_CreateNotaExcelResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateNew">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMAT_TYPESelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_KETENTUANSelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ddl_manualSelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateNewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreditProposalMainp_CreateNewResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateExist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMAT_TYPESelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_KETENTUANSelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ddl_manualSelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateExistResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreditProposalMainp_CreateExistResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateSyarat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMAT_TYPESelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_KETENTUANSelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ddl_manualSelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateSyaratResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreditProposalMainp_CreateSyaratResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateSyarat2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMAT_TYPESelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_KETENTUANSelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ddl_manualSelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateSyarat2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreditProposalMainp_CreateSyarat2Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateRata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMAT_TYPESelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_KETENTUANSelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ddl_manualSelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateRataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreditProposalMainp_CreateRataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateBank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SessionFullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SessionBranchName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMAT_TYPESelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_KETENTUANSelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ddl_manualSelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateBankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreditProposalMainp_CreateBankResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateUrus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMAT_TYPESelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_KETENTUANSelectedValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ddl_manualSelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditProposalMainp_CreateUrusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreditProposalMainp_CreateUrusResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SPPKExportASPXCreateSPPKWord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SPPKExportASPXCreateSPPKWordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SPPKExportASPXCreateSPPKWordResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="result" nillable="true" type="q5:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerInfoExportASPXExport_Excel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="curef" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMATFILESelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerInfoExportASPXExport_ExcelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerInfoExportASPXExport_ExcelResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerInfoExportASPXExport_Word">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="curef" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMATFILESelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerInfoExportASPXExport_WordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerInfoExportASPXExport_WordResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CBICustomerInfoExportASPXExport_Excel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="curef" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMATFILESelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CBICustomerInfoExportASPXExport_ExcelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CBICustomerInfoExportASPXExport_ExcelResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CBICustomerInfoExportASPXExport_Word">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="curef" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DDL_FORMATFILESelectedValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CBICustomerInfoExportASPXExport_WordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CBICustomerInfoExportASPXExport_WordResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChannellingInitialDataEntryUploadExcel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="filePath" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="apRegno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="aaNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="prodSeq" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChannellingInitialDataEntryUploadExcelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChannellingInitialDataEntryUploadExcelResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

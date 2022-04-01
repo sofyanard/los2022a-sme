@@ -1,0 +1,34 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Micro Mandiri Activity System" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Supervision Management" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Cluster Supervision" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Daily" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/SupervisionManagement/ClusterSupervision/Daily/ClusterActivities.aspx?tc=M2.1.1&amp;mc=M020101" />
+                <MenuItem Label="Penyimpangan" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/SupervisionManagement/ClusterSupervision/Penyimpangan/Penyimpangan.aspx?tc=M2.1.2&amp;mc=M020102" />
+              </MenuGroup>
+            </MenuItem>
+            <MenuItem Label="Micro Collection Supervision" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/SupervisionManagement/MicroCollectionSupervision/CollectionActivities.aspx?tc=M2.2&amp;mc=M0202" />
+            <MenuItem Label="Micro Credit Quality" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Acceptance" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/SupervisionManagement/MicroCreditQuality/Acceptance/AcceptanceReviewList.aspx?tc=M2.3.4&amp;mc=M020304" />
+              </MenuGroup>
+            </MenuItem>
+            <MenuItem Label="Business Recovery Supervision" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+              <MenuGroup>
+                <MenuItem Label="Unit Survey" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/SupervisionManagement/BusinessRecoverySupervision/UnitSurvey/UnitSurvey.aspx?tc=M2.4.1&amp;mc=M020401" />
+                <MenuItem Label="Daily Call" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/SupervisionManagement/BusinessRecoverySupervision/DailyCall/DailyCall.aspx?tc=M2.4.2&amp;mc=M020402" />
+                <MenuItem Label="Problem Solving" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/SupervisionManagement/BusinessRecoverySupervision/ProblemSolving/ProblemSolving.aspx?tc=M2.4.3&amp;mc=M020403" />
+                <MenuItem Label="Finding Issue" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/SupervisionManagement/BusinessRecoverySupervision/FindingIssue/FindingIssue.aspx?tc=M2.4.4&amp;mc=M020404" />
+              </MenuGroup>
+            </MenuItem>
+            <MenuItem Label="Reporting" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/SupervisionManagement/Reporting/SupervisionManagementReporting.aspx?tc=M2.5&amp;mc=M0205" />
+          </MenuGroup>
+        </MenuItem>
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>

@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://www.bankmandiri.co.id/mandiri/emas/ws/common/DDExistingAccDetailMaintenanceLoan" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.bankmandiri.co.id/mandiri/emas/ws/common/DDExistingAccDetailMaintenanceLoan" name="DDExistingAccDetailMaintenanceLoan" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema xmlns:tns="http://www.bankmandiri.co.id/mandiri/emas/ws/common/DDExistingAccDetailMaintenanceLoan" targetNamespace="http://www.bankmandiri.co.id/mandiri/emas/ws/common/DDExistingAccDetailMaintenanceLoan">
+      <s:element name="DDExistingAccDetailMaintenanceRequestDoc" type="tns:DDExistingAccDetailMaintenanceRequestDoc" />
+      <s:element name="DDExistingAccDetailMaintenanceResponseDoc" type="tns:DDExistingAccDetailMaintenanceResponseDoc" />
+      <s:complexType name="DDExistingAccDetailMaintenanceRequestDoc">
+        <s:sequence>
+          <s:element name="DDExistingAccDetailMaintenanceRequest" nillable="true" type="tns:DDExistingAccDetailMaintenanceRequest" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DDExistingAccDetailMaintenanceRequest">
+        <s:sequence>
+          <s:element minOccurs="0" name="soaHeader" nillable="true" type="tns:soaHeaderRequest" />
+          <s:element minOccurs="0" name="securityHeader" nillable="true" type="tns:securityHeader" />
+          <s:element minOccurs="0" name="dspHeader" nillable="true" type="tns:dspHeader" />
+          <s:element minOccurs="0" name="dataHeader" nillable="true" type="tns:dataHeaderMbase" />
+          <s:element name="body" nillable="true" type="tns:body" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="soaHeaderRequest">
+        <s:sequence>
+          <s:element minOccurs="0" name="externalId" nillable="true" type="tns:externalId" />
+          <s:element name="tellerId" type="tns:tellerId" />
+          <s:element name="journalSequence" type="tns:journalSequence" />
+          <s:element name="transactionCode" nillable="true" type="tns:transactionCode" />
+          <s:element name="channelId" nillable="true" type="tns:channelId" />
+          <s:element name="timestamp" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="externalId">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:pattern value="\d{1,19}" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="tellerId">
+        <s:restriction base="s:long">
+          <s:totalDigits value="7" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="journalSequence">
+        <s:restriction base="s:long">
+          <s:totalDigits value="7" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="transactionCode">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="4" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="channelId">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="10" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="securityHeader">
+        <s:sequence>
+          <s:element name="challengeType" type="s:string" />
+          <s:element name="corporateId" type="s:string" />
+          <s:element minOccurs="0" name="customerAdditionalId" nillable="true" type="s:string" />
+          <s:element name="appliNo" type="s:string" />
+          <s:element name="challenge1" type="s:string" />
+          <s:element minOccurs="0" name="challenge2" nillable="true" type="s:string" />
+          <s:element minOccurs="0" name="challenge3" nillable="true" type="s:string" />
+          <s:element minOccurs="0" name="challenge4" nillable="true" type="s:string" />
+          <s:element name="responseToken" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="dspHeader">
+        <s:sequence>
+          <s:element minOccurs="0" name="destinationId" nillable="true" type="tns:destinationId" />
+          <s:element minOccurs="0" name="messageStatus" nillable="true" type="tns:messageStatus" />
+          <s:element minOccurs="0" name="bankIdNumber" nillable="true" type="tns:bankIdNumber" />
+          <s:element minOccurs="0" name="node" nillable="true" type="tns:node" />
+          <s:element minOccurs="0" name="retrievalReferenceNumber" nillable="true" type="tns:retrievalReferenceNumber" />
+          <s:element minOccurs="0" name="acquirerReferenceNumber" nillable="true" type="tns:acquirerReferenceNumber" />
+          <s:element minOccurs="0" name="transmissionNumber" nillable="true" type="tns:transmissionNumber" />
+          <s:element minOccurs="0" name="numberOfRecordsToBeLoaded" nillable="true" type="tns:numberOfRecordsToBeLoaded" />
+          <s:element minOccurs="0" name="numberOfErrorsToBeLoaded" nillable="true" type="tns:numberOfErrorsToBeLoaded" />
+          <s:element minOccurs="0" name="userId" nillable="true" type="tns:userId" />
+          <s:element minOccurs="0" name="supervisorId" nillable="true" type="tns:supervisorId" />
+          <s:element minOccurs="0" name="moreRecorIndicator" nillable="true" type="tns:moreRecorIndicator" />
+          <s:element minOccurs="0" name="cutOffIndicator" nillable="true" type="tns:cutOffIndicator" />
+          <s:element minOccurs="0" name="userData" nillable="true" type="tns:userData" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="destinationId">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="10" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="messageStatus">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="8" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="bankIdNumber">
+        <s:restriction base="s:unsignedLong">
+          <s:totalDigits value="11" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="node">
+        <s:restriction base="s:unsignedLong">
+          <s:totalDigits value="2" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="retrievalReferenceNumber">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="22" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="acquirerReferenceNumber">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="12" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="transmissionNumber">
+        <s:restriction base="s:unsignedLong">
+          <s:totalDigits value="4" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="numberOfRecordsToBeLoaded">
+        <s:restriction base="s:unsignedLong">
+          <s:totalDigits value="4" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="numberOfErrorsToBeLoaded">
+        <s:restriction base="s:unsignedLong">
+          <s:totalDigits value="4" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="userId">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="10" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="supervisorId">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="10" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="moreRecorIndicator">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="1" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="cutOffIndicator">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="1" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="userData">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="20" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="dataHeaderMbase">
+        <s:sequence>
+          <s:element minOccurs="0" name="referenceNumber" type="tns:referenceNumber" />
+          <s:element minOccurs="0" name="rebidNumber" type="tns:rebidNumber" />
+          <s:element minOccurs="0" name="endOfGroupIndicator" type="tns:endOfGroupIndicator" />
+          <s:element minOccurs="0" name="blockMessageNumber" type="tns:blockMessageNumber" />
+          <s:element minOccurs="0" name="bankNumber" type="tns:bankNumber" />
+          <s:element minOccurs="0" name="branchNumber" type="tns:branchNumber" />
+          <s:element minOccurs="0" name="reviewSupervisorID" type="tns:reviewSupervisorID" />
+          <s:element minOccurs="0" name="transmitSupervisorID" type="tns:transmitSupervisorID" />
+          <s:element minOccurs="0" name="hostSupervisorId" type="tns:hostSupervisorId" />
+          <s:element minOccurs="0" name="actionCode" type="tns:actionCode" />
+          <s:element minOccurs="0" name="transactionMode" type="tns:transactionMode" />
+          <s:element minOccurs="0" name="noOfRecordsToRetrieve" type="tns:noOfRecordsToRetrieve" />
+          <s:element minOccurs="0" name="moreRecordsIndicator" type="tns:moreRecordsIndicator" />
+          <s:element minOccurs="0" name="searchMethod" type="tns:searchMethod" />
+          <s:element minOccurs="0" name="dateInFromClientDdmmyyyy" type="s:date" />
+          <s:element minOccurs="0" name="timeInFromClientHhmmss" type="s:time" />
+          <s:element minOccurs="0" name="accountNo" type="tns:accountNo" />
+          <s:element minOccurs="0" name="accountType" type="tns:accountType" />
+          <s:element minOccurs="0" name="CIFno" type="tns:CIFno" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="referenceNumber">
+        <s:restriction base="s:long">
+          <s:totalDigits value="7" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="rebidNumber">
+        <s:restriction base="s:long">
+          <s:totalDigits value="5" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="endOfGroupIndicator">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="4" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="blockMessageNumber">
+        <s:restriction base="s:long">
+          <s:totalDigits value="3" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="bankNumber">
+        <s:restriction base="s:long">
+          <s:totalDigits value="3" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="branchNumber">
+        <s:restriction base="s:long">
+          <s:totalDigits value="5" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="reviewSupervisorID">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="10" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="transmitSupervisorID">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="10" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="hostSupervisorId">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="10" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="actionCode">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="1" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="transactionMode">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="1" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="noOfRecordsToRetrieve">
+        <s:restriction base="s:long">
+          <s:totalDigits value="3" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="moreRecordsIndicator">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="1" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="searchMethod">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="1" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="accountNo">
+        <s:restriction base="s:long">
+          <s:totalDigits value="19" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="accountType">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="1" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="CIFno">
+        <s:restriction base="s:long">
+          <s:totalDigits value="19" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="body">
+        <s:sequence>
+          <s:element name="accountNumber" nillable="true" type="s:string" />
+          <s:element name="accountType" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DDExistingAccDetailMaintenanceResponseDoc">
+        <s:sequence>
+          <s:element name="DDExistingAccDetailMaintenanceResponse" nillable="true" type="tns:DDExistingAccDetailMaintenanceResponse" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DDExistingAccDetailMaintenanceResponse">
+        <s:sequence>
+          <s:element minOccurs="0" name="soaHeader" nillable="true" type="tns:soaHeaderResponse" />
+          <s:element minOccurs="0" name="securityHeader" nillable="true" type="tns:securityHeader" />
+          <s:element minOccurs="0" name="dspHeader" nillable="true" type="tns:dspHeader" />
+          <s:element minOccurs="0" name="dataHeader" nillable="true" type="tns:dataHeaderMbase" />
+          <s:element name="body" nillable="true" type="tns:body2" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="soaHeaderResponse">
+        <s:sequence>
+          <s:element minOccurs="0" name="externalId" type="tns:externalId2" />
+          <s:element name="tellerId" type="tns:tellerId2" />
+          <s:element name="journalSequence" type="tns:journalSequence2" />
+          <s:element name="transactionCode" type="tns:transactionCode2" />
+          <s:element name="channelId" type="tns:channelId2" />
+          <s:element name="timestamp" type="s:dateTime" />
+          <s:element minOccurs="0" name="internalId" type="tns:internalId" />
+          <s:element name="responseCode" type="s:int" />
+          <s:element name="responseMessage" type="s:string" />
+          <s:element name="responseTimestamp" type="s:dateTime" />
+          <s:element minOccurs="0" name="errorNumber" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="externalId2">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:pattern value="\d{1,19}" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="tellerId2">
+        <s:restriction base="s:long">
+          <s:totalDigits value="7" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="journalSequence2">
+        <s:restriction base="s:long">
+          <s:totalDigits value="7" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="transactionCode2">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="4" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="channelId2">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:maxLength value="10" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="internalId">
+        <s:restriction base="s:string">
+          <s:whiteSpace value="preserve" />
+          <s:pattern value="[0-9a-zA-Z+/=]{1,32}" />
+          <s:maxLength value="32" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="body2">
+        <s:sequence>
+          <s:element name="recordID" nillable="true" type="s:string" />
+          <s:element name="branchNumber" nillable="true" type="s:string" />
+          <s:element name="shortName" nillable="true" type="s:string" />
+          <s:element name="cifNumber" nillable="true" type="s:string" />
+          <s:element name="alternateAddress" nillable="true" type="s:string" />
+          <s:element name="additionalName" nillable="true" type="s:string" />
+          <s:element name="aliasName" nillable="true" type="s:string" />
+          <s:element name="officer" nillable="true" type="s:string" />
+          <s:element name="status" nillable="true" type="s:string" />
+          <s:element name="accountGroupNumber" nillable="true" type="s:string" />
+          <s:element name="closeStatus" nillable="true" type="s:string" />
+          <s:element name="class" nillable="true" type="s:string" />
+          <s:element name="currencyType" nillable="true" type="s:string" />
+          <s:element name="currencyDecimals" nillable="true" type="s:string" />
+          <s:element name="glGroupCode" nillable="true" type="s:string" />
+          <s:element name="stopCode" nillable="true" type="s:string" />
+          <s:element name="holdCode" nillable="true" type="s:string" />
+          <s:element name="alertCode" nillable="true" type="s:string" />
+          <s:element name="specialInstructionCode" nillable="true" type="s:string" />
+          <s:element name="printInteresCheck" nillable="true" type="s:string" />
+          <s:element name="dateOpened" nillable="true" type="s:string" />
+          <s:element name="dateOfStatus" nillable="true" type="s:string" />
+          <s:element name="dateEntered" nillable="true" type="s:string" />
+          <s:element name="dateLastOverdrawn" nillable="true" type="s:string" />
+          <s:element name="priorLastActiveDate" nillable="true" type="s:string" />
+          <s:element name="dateLastActive" nillable="true" type="s:string" />
+          <s:element name="dateLastCo" nillable="true" type="s:string" />
+          <s:element name="dateLateInterestPaid" nillable="true" type="s:string" />
+          <s:element name="dateLastInterestPaid" nillable="true" type="s:string" />
+          <s:element name="dateLastStatement" nillable="true" type="s:string" />
+          <s:element name="dateLastMaintenance" nillable="true" type="s:string" />
+          <s:element name="dateLastDeposit" nillable="true" type="s:string" />
+          <s:element name="dateSCWaiveExpires" nillable="true" type="s:string" />
+          <s:element name="dateLastCARCodeMaint" nillable="true" type="s:string" />
+          <s:element name="amtOfLastDeposit" nillable="true" type="s:string" />
+          <s:element name="holdAmount" nillable="true" type="s:string" />
+          <s:element name="totalOCAmount" nillable="true" type="s:string" />
+          <s:element name="totalOCPAmount" nillable="true" type="s:string" />
+          <s:element name="totalODOCAmount" nillable="true" type="s:string" />
+          <s:element name="totalMCAmount" nillable="true" type="s:string" />
+          <s:element name="totalIBTAmount" nillable="true" type="s:string" />
+          <s:element name="totalLLCAmount" nillable="true" type="s:string" />
+          <s:element name="totalExtraAmount" nillable="true" type="s:string" />
+          <s:element name="totalSuspenseAmount" nillable="true" type="s:string" />
+          <s:element name="floatDrawingAmount" nillable="true" type="s:string" />
+          <s:element name="ledgerBalance" nillable="true" type="s:string" />
+          <s:element name="yesterdayLedgerBalance" nillable="true" type="s:string" />
+          <s:element name="previousStatementBalance" nillable="true" type="s:string" />
+          <s:element name="prevYearEndLedgerBalance" nillable="true" type="s:string" />
+          <s:element name="minimumBalance" nillable="true" type="s:string" />
+          <s:element name="maximumBalance" nillable="true" type="s:string" />
+          <s:element name="collectedBalance" nillable="true" type="s:string" />
+          <s:element name="accuredODInterest" nillable="true" type="s:string" />
+          <s:element name="aggregateDays" nillable="true" type="s:string" />
+          <s:element name="aggregateLedgerBalance" nillable="true" type="s:string" />
+          <s:element name="aggregateCollectedBalance" nillable="true" type="s:string" />
+          <s:element name="aggregateDaysLedgerNegative" nillable="true" type="s:string" />
+          <s:element name="aggregateNegativeLedgerBalance" nillable="true" type="s:string" />
+          <s:element name="aggregateDaysCollectedNegative" nillable="true" type="s:string" />
+          <s:element name="minimumBalanceInterestCycle" nillable="true" type="s:string" />
+          <s:element name="maximumBalanceInternetCycle" nillable="true" type="s:string" />
+          <s:element name="minimumBalanceMTD" nillable="true" type="s:string" />
+          <s:element name="maximumBalanceMTD" nillable="true" type="s:string" />
+          <s:element name="aggregateDaysInterestCycle" nillable="true" type="s:string" />
+          <s:element name="aggregateLedgerBalanceInterestCycle" nillable="true" type="s:string" />
+          <s:element name="aggregateCollectedBalanceInterestC" nillable="true" type="s:string" />
+          <s:element name="accruedInterest" nillable="true" type="s:string" />
+          <s:element name="alternteAccruedInteres" nillable="true" type="s:string" />
+          <s:element name="ytdInterestPaid" nillable="true" type="s:string" />
+          <s:element name="previousYTDInterestPaid" nillable="true" type="s:string" />
+          <s:element name="amtOfLastIntPd" nillable="true" type="s:string" />
+          <s:element name="statementCycle" nillable="true" type="s:string" />
+          <s:element name="statementCode" nillable="true" type="s:string" />
+          <s:element name="interestCycle" nillable="true" type="s:string" />
+          <s:element name="serviceChargeCycle" nillable="true" type="s:string" />
+          <s:element name="depositTypeCode" nillable="true" type="s:string" />
+          <s:element name="serviceChargeMode" nillable="true" type="s:string" />
+          <s:element name="userCode1" nillable="true" type="s:string" />
+          <s:element name="userCode2" nillable="true" type="s:string" />
+          <s:element name="userCode3" nillable="true" type="s:string" />
+          <s:element name="userCode4" nillable="true" type="s:string" />
+          <s:element name="numberOfDebits" nillable="true" type="s:string" />
+          <s:element name="amountOfDebits" nillable="true" type="s:string" />
+          <s:element name="numberOfCredits" nillable="true" type="s:string" />
+          <s:element name="amountOfCredits" nillable="true" type="s:string" />
+          <s:element name="numberSCDebits" nillable="true" type="s:string" />
+          <s:element name="amountSCDebits" nillable="true" type="s:string" />
+          <s:element name="numberSCCredits" nillable="true" type="s:string" />
+          <s:element name="amountSCCredits" nillable="true" type="s:string" />
+          <s:element name="noOfOnUsATMCredits" nillable="true" type="s:string" />
+          <s:element name="amtOfOnUsATMCredit" nillable="true" type="s:string" />
+          <s:element name="noOfOnUsATMDebits" nillable="true" type="s:string" />
+          <s:element name="amtOfOnUsATMDebits" nillable="true" type="s:string" />
+          <s:element name="noOfFrgnATMCredits" nillable="true" type="s:string" />
+          <s:element name="amtOfFrgnATMCredits" nillable="true" type="s:string" />
+          <s:element name="noOfFrgnATMDebits" nillable="true" type="s:string" />
+          <s:element name="acLevelAdminFee" nillable="true" type="s:string" />
+          <s:element name="numberOfDepositDays" nillable="true" type="s:string" />
+          <s:element name="amountOfNSFItems" nillable="true" type="s:string" />
+          <s:element name="overdraftLimitCode" nillable="true" type="s:string" />
+          <s:element name="signatureVerification" nillable="true" type="s:string" />
+          <s:element name="overdraftProtection" nillable="true" type="s:string" />
+          <s:element name="validForCheckBook" nillable="true" type="s:string" />
+          <s:element name="atmCard" nillable="true" type="s:string" />
+          <s:element name="includeOnCombinedStatement" nillable="true" type="s:string" />
+          <s:element name="holdMailCode" nillable="true" type="s:string" />
+          <s:element name="automaticNSFCharge" nillable="true" type="s:string" />
+          <s:element name="highVolumeAccount" nillable="true" type="s:string" />
+          <s:element name="badCheckIncident" nillable="true" type="s:string" />
+          <s:element name="timesODThisCycle" nillable="true" type="s:string" />
+          <s:element name="timesODThisQtr" nillable="true" type="s:string" />
+          <s:element name="timesOD2ndQtr" nillable="true" type="s:string" />
+          <s:element name="timesOD4thQtr" nillable="true" type="s:string" />
+          <s:element name="timeODLastYear" nillable="true" type="s:string" />
+          <s:element name="timesODLifeToDate" nillable="true" type="s:string" />
+          <s:element name="relatedAccountNo" nillable="true" type="s:string" />
+          <s:element name="relatedAccountType" nillable="true" type="s:string" />
+          <s:element name="noCksDepositOnUs" nillable="true" type="s:string" />
+          <s:element name="noCksDepositForeign" nillable="true" type="s:string" />
+          <s:element name="listPostCode" nillable="true" type="s:string" />
+          <s:element name="acctTierRateNumber" nillable="true" type="s:string" />
+          <s:element name="interestRate" nillable="true" type="s:string" />
+          <s:element name="reateVariance" nillable="true" type="s:string" />
+          <s:element name="rateVarianceCode" nillable="true" type="s:string" />
+          <s:element name="rateFloor" nillable="true" type="s:string" />
+          <s:element name="rateCeiling" nillable="true" type="s:string" />
+          <s:element name="rateReviewDate" nillable="true" type="s:string" />
+          <s:element name="rateReviewTerm" nillable="true" type="s:string" />
+          <s:element name="rateReviewwTermCode" nillable="true" type="s:string" />
+          <s:element name="odInterestRate" nillable="true" type="s:string" />
+          <s:element name="odRateVariance" nillable="true" type="s:string" />
+          <s:element name="odRateVarianceCode" nillable="true" type="s:string" />
+          <s:element name="odRateFloor" nillable="true" type="s:string" />
+          <s:element name="odRateCeiling" nillable="true" type="s:string" />
+          <s:element name="odRateReiewDate" nillable="true" type="s:string" />
+          <s:element name="odRateReviewTerm" nillable="true" type="s:string" />
+          <s:element name="odRateReviewTermCode" nillable="true" type="s:string" />
+          <s:element name="automaticalyMaintainNPLStatus" nillable="true" type="s:string" />
+          <s:element name="nonperformingNPLStatus" nillable="true" type="s:string" />
+          <s:element name="firstReachedExcessDate" nillable="true" type="s:string" />
+          <s:element name="noDebitsUpTo3" nillable="true" type="s:string" />
+          <s:element name="noDebitsUpTo6" nillable="true" type="s:string" />
+          <s:element name="noDebitsUpToExceed" nillable="true" type="s:string" />
+          <s:element name="noDebitsUpTo6Exceed" nillable="true" type="s:string" />
+          <s:element name="cashDepositThisCycle" nillable="true" type="s:string" />
+          <s:element name="cashPaidThisCycle" nillable="true" type="s:string" />
+          <s:element name="aggregateDaysThisQtr" nillable="true" type="s:string" />
+          <s:element name="aggregateLedgerBalanceThisQtr" nillable="true" type="s:string" />
+          <s:element name="aggregateCollectedBalanceThisQtr" nillable="true" type="s:string" />
+          <s:element name="averageLedgerBalancePriorQtr1" nillable="true" type="s:string" />
+          <s:element name="averageLedgerBalancePriorQtr2" nillable="true" type="s:string" />
+          <s:element name="averageLedgerBalancePriorQtr3" nillable="true" type="s:string" />
+          <s:element name="averageCollectedBalancePriorQtr71" nillable="true" type="s:string" />
+          <s:element name="averageCollectedBalancePriorQtr72" nillable="true" type="s:string" />
+          <s:element name="averageCollectedBalancePriorQtr73" nillable="true" type="s:string" />
+          <s:element name="averageCollectedBalancePriorQtr74" nillable="true" type="s:string" />
+          <s:element name="specialInformationCode1" nillable="true" type="s:string" />
+          <s:element name="specialInformationCode2" nillable="true" type="s:string" />
+          <s:element name="specialInformationCode3" nillable="true" type="s:string" />
+          <s:element name="specialInformationCode4" nillable="true" type="s:string" />
+          <s:element name="specialMessage" nillable="true" type="s:string" />
+          <s:element name="clubPlan" nillable="true" type="s:string" />
+          <s:element name="noNSFThisCycle" nillable="true" type="s:string" />
+          <s:element name="noNSFThisQtr" nillable="true" type="s:string" />
+          <s:element name="noNSF2ndQtr" nillable="true" type="s:string" />
+          <s:element name="noNSF3rdQtr" nillable="true" type="s:string" />
+          <s:element name="noNSF4thQtr" nillable="true" type="s:string" />
+          <s:element name="noNSFLastYear" nillable="true" type="s:string" />
+          <s:element name="noNSFLifeToDate" nillable="true" type="s:string" />
+          <s:element name="totalAccrualFloat" nillable="true" type="s:string" />
+          <s:element name="totalAvailibilityFloat" nillable="true" type="s:string" />
+          <s:element name="totalCashFloat" nillable="true" type="s:string" />
+          <s:element name="noOfEnclosures" nillable="true" type="s:string" />
+          <s:element name="eftFlag" nillable="true" type="s:string" />
+          <s:element name="acLevelMinBalFee" nillable="true" type="s:string" />
+          <s:element name="nolargeBalanceFluctuationMTD" nillable="true" type="s:string" />
+          <s:element name="noLargeBalanceFluctuationYTD" nillable="true" type="s:string" />
+          <s:element name="noTimesOnKiteSuspectReport" nillable="true" type="s:string" />
+          <s:element name="federalWHCode" nillable="true" type="s:string" />
+          <s:element name="stateWHCode" nillable="true" type="s:string" />
+          <s:element name="state" nillable="true" type="s:string" />
+          <s:element name="dateWHCodeChanged" nillable="true" type="s:string" />
+          <s:element name="alternateAccountNo" nillable="true" type="s:string" />
+          <s:element name="alternateAccountType" nillable="true" type="s:string" />
+          <s:element name="fedWHAlternateRate" nillable="true" type="s:string" />
+          <s:element name="stateWHAlternateRate" nillable="true" type="s:string" />
+          <s:element name="fedWHToday" nillable="true" type="s:string" />
+          <s:element name="federalWHMTD" nillable="true" type="s:string" />
+          <s:element name="federalWHQTD" nillable="true" type="s:string" />
+          <s:element name="federalWHYTD" nillable="true" type="s:string" />
+          <s:element name="stateWHToday" nillable="true" type="s:string" />
+          <s:element name="stateWHMTD" nillable="true" type="s:string" />
+          <s:element name="stateWHQTD" nillable="true" type="s:string" />
+          <s:element name="stateWHYTD" nillable="true" type="s:string" />
+          <s:element name="federalWHLastYear" nillable="true" type="s:string" />
+          <s:element name="stateWHLastYear" nillable="true" type="s:string" />
+          <s:element name="highestInterestRateEarned" nillable="true" type="s:string" />
+          <s:element name="nsfItemsExit" nillable="true" type="s:string" />
+          <s:element name="aftCode" nillable="true" type="s:string" />
+          <s:element name="statementPassbookCode" nillable="true" type="s:string" />
+          <s:element name="tellerSpecialStatus" nillable="true" type="s:string" />
+          <s:element name="printChecksInOrderOnStatement" nillable="true" type="s:string" />
+          <s:element name="mtdServiceCharge" nillable="true" type="s:string" />
+          <s:element name="mtdInterestPaid" nillable="true" type="s:string" />
+          <s:element name="mtdODInterestCharged" nillable="true" type="s:string" />
+          <s:element name="mtdFeesPaid" nillable="true" type="s:string" />
+          <s:element name="mtdAggregateBalance" nillable="true" type="s:string" />
+          <s:element name="mtdAggreagateDays" nillable="true" type="s:string" />
+          <s:element name="mtdBginningAccrual" nillable="true" type="s:string" />
+          <s:element name="mtdReturnedDebitCount" nillable="true" type="s:string" />
+          <s:element name="mtdReturnedDebitAmount" nillable="true" type="s:string" />
+          <s:element name="mtdReturnedCreditCount" nillable="true" type="s:string" />
+          <s:element name="mtdReturnedCreditAmount" nillable="true" type="s:string" />
+          <s:element name="classCarCode" nillable="true" type="s:string" />
+          <s:element name="selectionNumber" nillable="true" type="s:string" />
+          <s:element name="lokasiI" nillable="true" type="s:string" />
+          <s:element name="atmCardlevelGS" nillable="true" type="s:string" />
+          <s:element name="atmCardTypeIR" nillable="true" type="s:string" />
+          <s:element name="atmCardNo" nillable="true" type="s:string" />
+          <s:element name="sicCode5" nillable="true" type="s:string" />
+          <s:element name="sicCode6" nillable="true" type="s:string" />
+          <s:element name="aclevelFees" nillable="true" type="s:string" />
+          <s:element name="sicCode8" nillable="true" type="s:string" />
+          <s:element name="uicuserDefined1" nillable="true" type="s:string" />
+          <s:element name="uicuserDefined2" nillable="true" type="s:string" />
+          <s:element name="uicuserDefined3" nillable="true" type="s:string" />
+          <s:element name="uicuserDefined4" nillable="true" type="s:string" />
+          <s:element name="uicuserDefined5" nillable="true" type="s:string" />
+          <s:element name="uicuserDefined6" nillable="true" type="s:string" />
+          <s:element name="uicuserDefined7" nillable="true" type="s:string" />
+          <s:element name="uicuserDefined8" nillable="true" type="s:string" />
+          <s:element name="additionalName1" nillable="true" type="s:string" />
+          <s:element name="numberOfPayments" nillable="true" type="s:string" />
+          <s:element name="paymentsFrequencyCode" nillable="true" type="s:string" />
+          <s:element name="maturityDate" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </types>
+  <message name="DDExistingAccDetailMaintenanceLoan_PortType_DDExistingAccDetailMaintenanceRequestDoc">
+    <part name="parameters" element="s0:DDExistingAccDetailMaintenanceRequestDoc" />
+  </message>
+  <message name="DDExistingAccDetailMaintenanceLoan_PortType_DDExistingAccDetailMaintenanceResponseDoc">
+    <part name="parameters" element="s0:DDExistingAccDetailMaintenanceResponseDoc" />
+  </message>
+  <portType name="DDExistingAccDetailMaintenanceLoan_PortType">
+    <operation name="DDExistingAccountDetailMaintenance">
+      <input message="s0:DDExistingAccDetailMaintenanceLoan_PortType_DDExistingAccDetailMaintenanceRequestDoc" />
+      <output message="s0:DDExistingAccDetailMaintenanceLoan_PortType_DDExistingAccDetailMaintenanceResponseDoc" />
+    </operation>
+  </portType>
+  <binding name="mandiri_emas_ws_common_DDExistingAccDetailMaintenanceLoan_Binder" type="s0:DDExistingAccDetailMaintenanceLoan_PortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="DDExistingAccountDetailMaintenance">
+      <soap:operation soapAction="mandiri_emas_ws_common_DDExistingAccDetailMaintenanceLoan_Binder_DDExistingAccountDetailMaintenance" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+  </binding>
+  <service name="DDExistingAccDetailMaintenanceLoan">
+    <port name="mandiri_emas_ws_common_DDExistingAccDetailMaintenanceLoan_Port" binding="s0:mandiri_emas_ws_common_DDExistingAccDetailMaintenanceLoan_Binder">
+      <soap:address location="http://mdrsoadev01:8888/ws/mandiri.emas.ws.common:DDExistingAccDetailMaintenanceLoan/mandiri_emas_ws_common_DDExistingAccDetailMaintenanceLoan_Port" />
+    </port>
+  </service>
+</definitions>

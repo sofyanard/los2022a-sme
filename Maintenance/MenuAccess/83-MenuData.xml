@@ -1,0 +1,18 @@
+<MenuData ImagesBaseURL="Maintenance/MenuAccess/images/" DefaultGroupCssClass="MenuGroup" DefaultItemCssClass="MenuItem" DefaultItemCssClassOver="MenuItemOver" DefaultItemCssClassDown="MenuItemDown">
+  <MenuGroup>
+    <MenuItem Label="Micro Mandiri Activity System" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+      <MenuGroup>
+        <MenuItem Label="Collateral Administration" RightIcon="arrow.gif" RightconWidth="17" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12">
+          <MenuGroup>
+            <MenuItem Label="Acceptance Data Input" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/AcceptanceDataInput/ListAcceptance.aspx?tc=M1.3&amp;mc=M0103" />
+            <MenuItem Label="Reporting" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/Reporting/CollateralAdministrationReport.aspx?tc=M1.7&amp;mc=M0107" />
+            <MenuItem Label="Parameter Notaris" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/DetailCollateral/DetailJaminan.aspx?tc=M1.8&amp;mc=M0108" />
+            <MenuItem Label="Parameter Asuransi" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/DetailCollateral/DetailJaminan.aspx?tc=M1.9&amp;mc=M0109" />
+            <MenuItem Label="Batching Send to CA" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="MAS/CollateralAdministration/DetailCollateral/ListJaminan.aspx?tc=M1.3&amp;mc=M0111" />
+          </MenuGroup>
+        </MenuItem>
+      </MenuGroup>
+    </MenuItem>
+    <MenuItem Label="Logout" LeftIcon="bullet.gif" LeftIconOver="bullet_over.gif" LeftIconWidth="20" LeftIconHeight="12" URL="Logout.aspx" URLTarget="_top" />
+  </MenuGroup>
+</MenuData>
