@@ -2,11 +2,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SME", "D:\SOURCE\BANKSULSELBAR2021\SME\SME.csproj", "{AAC52091-DB06-427A-9C0C-BDA12B92AB75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SME", "D:\SOURCE\Bank-Sulselbar-2021\SME\SME.csproj", "{AAC52091-DB06-427A-9C0C-BDA12B92AB75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistoricalLoanInfo", "D:\SOURCE\BANKSULSELBAR2021\SME\HistoricalLoanInfo\HistoricalLoanInfo.csproj", "{B626C0FA-2AB5-4697-9875-744CC74B7F78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistoricalLoanInfo", "D:\SOURCE\Bank-Sulselbar-2021\SME\HistoricalLoanInfo\HistoricalLoanInfo.csproj", "{B626C0FA-2AB5-4697-9875-744CC74B7F78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Earmarking", "D:\SOURCE\BANKSULSELBAR2021\SME\Earmarking\Earmarking.csproj", "{A673A93B-F4D7-404B-97F3-541B084E6059}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Earmarking", "D:\SOURCE\Bank-Sulselbar-2021\SME\Earmarking\Earmarking.csproj", "{A673A93B-F4D7-404B-97F3-541B084E6059}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
